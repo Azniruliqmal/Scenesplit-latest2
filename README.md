@@ -136,9 +136,30 @@ A comprehensive full-stack application for film production management, featuring
 
 Create a `.env` file in the backend directory:
 ```env
-GEMINI_API_KEY=your_gemini_api_key_here
-MODEL_CHOICE=gemini-1.5-flash
-DATABASE_URL=sqlite:///./script_analysis.db
+VITE_API_URL=https://your-api-url.com
+VITE_APP_TITLE=Draft SS App
+
+# LLM Configuration
+GEMINI_API_KEY=Your_API_key_here
+GEMINI_KEY=Your_API_key_here
+MODEL_CHOICE=gemini-2.0-flash
+
+# Database Configuration
+DB_USER=postgres
+DB_PASSWORD=
+DB_HOST=
+DB_PORT=
+DB_NAME=
+
+# Database Pool Settings (optional)
+DB_POOL_SIZE=5
+DB_MAX_OVERFLOW=10
+DB_ECHO=true
+
+# MongoDB
+MONGODB_ATLAS_CLUSTER_URI=mongodb+srv://
+MONGODB_DB_NAME=scenesplit_ai
+MONGODB_COLLECTION_NAME=cost_collection_pdf
 ```
 
 ## 📱 How to Use
